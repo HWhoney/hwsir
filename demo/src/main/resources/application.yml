@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+    url: jdbc:mysql://127.0.0.1:3306/sell?characterEncoding=utf-8&useSSL=false
+  jpa:
+    hibernate:
+        ddl-auto: update
+    show-sql: true
+#配置json格式数据不返回空值
+  jackson:
+    default-property-inclusion: non_null
+#url路径
+server:
+  servlet:
+    context-path: /sell
+#server:
+# context-path: /demo
+#  logging:
+#    pattern:
+#      console: "%d - %msg%n"
+#
+#    file: /demo/log/demo.log
